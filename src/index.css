@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+main {
+    width: min(100% - 2rem, 800px);
+    margin-inline: auto;
+    margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+input,
+button {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 255);
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-weight: 600;
+}
+
+label {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button:is(:hover, :focus) {
+    background-color: #f6f6f6;
+}
+
+button.green {
+    background-color: rgb(130, 255, 130);
+}
+
+button.green:is(:hover, :focus) {
+    background-color: rgb(97, 232, 97);
+}
+
+button.red {
+    background-color: rgb(255, 163, 163);
+}
+
+button.red:is(:hover, :focus) {
+    background-color: rgb(227, 119, 119);
+}
+
+.todo-item {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 255);
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.todo-item div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
