@@ -4,11 +4,17 @@
     "version": "0.0.0",
     "scripts": {
         "dev": "vite",
+        "test": "env-cmd -f .env.test vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "server": "json-server --watch --port 4000 db.json"
+        "server": "json-server --watch --port 4000 db.json",
+        "server:test": "json-server --watch --port 4001 test-db.json",
+        "server:reset": "node reset-test-db.js",
+        "cy:open": "cypress open",
+        "cy:run": "cypress run"
     },
     "dependencies": {
+        "env-cmd": "^10.1.0",
         "react": "^18.0.0",
         "react-dom": "^18.0.0"
     },
@@ -16,6 +22,8 @@
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
         "@vitejs/plugin-react": "^1.3.0",
+        "cypress": "^12.0.2",
+        "eslint-plugin-cypress": "^2.12.1",
         "typescript": "^4.6.3",
         "vite": "^2.9.15"
     }
