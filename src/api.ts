@@ -1,7 +1,7 @@
 import { TTodo } from './App';
 
 const BASE_URL = import.meta.env.VITE_API_URL;
-const TODOS_ENDPOINT = `${BASE_URL}/todos`;
+export const TODOS_ENDPOINT = `${BASE_URL}/todos`;
 
 export const getTodos = () => fetch(TODOS_ENDPOINT).then((res) => res.json());
 

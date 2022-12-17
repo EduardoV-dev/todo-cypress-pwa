@@ -1,29 +1,9 @@
 {
-    "todos": [
-        {
-            "done": true,
-            "name": "Edited",
-            "id": 1
-        },
-        {
-            "done": false,
-            "name": "Another",
-            "id": 3
-        },
-        {
-            "name": "todo ",
-            "done": false,
-            "id": 4
-        },
-        {
-            "name": "Yep edited",
-            "done": true,
-            "id": 5
-        },
-        {
-            "done": false,
-            "name": "New todo",
-            "id": 6
-        }
-    ]
+  "todos": [
+    {
+      "name": "Yep edited",
+      "done": true,
+      "id": 5
+    }
+  ]
 }
